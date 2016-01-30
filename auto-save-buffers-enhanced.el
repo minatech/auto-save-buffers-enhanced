@@ -291,6 +291,7 @@ the directories under VCS."
       (while t
         (if (or (file-exists-p ".svn")
                 (file-exists-p ".cvs")
+                (file-exists-p ".hg")
                 (file-exists-p ".git"))
             (setq checkout-path (expand-file-name default-directory)))
         (cd "..")
